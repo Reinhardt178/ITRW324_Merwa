@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Skeerpoort Verspeiders</string>
+    <string name="title_activity_thrid">ThridActivity</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+</resources>
