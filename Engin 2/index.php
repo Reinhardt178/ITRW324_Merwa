@@ -1,18 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE php>
 <?php
-
-$host = "localhost";
-$username = "root";
-$user_pass = "usbw";
-$database = "test";
-
-$mysqli = new mysqli($host, $username, $user_pass, $database);
-
-if ($mysqli->connect_errno) {
-    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
-}
-echo $mysqli->host_info . "\n";
-
 ?>
 <html lang="en">
   <head>
@@ -102,7 +89,7 @@ echo $mysqli->host_info . "\n";
             <img class="card-img-top" src="images/ulp93 copy.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">ULP 93</h5>
-<a href="#" class="btn btn-primary">Order</a>
+<a href="UPL93.html" class="btn btn-primary">Order</a>
             </div>
           </div>
         </div>
