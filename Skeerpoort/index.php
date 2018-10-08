@@ -80,7 +80,59 @@
             <img class="card-img-top" src="images/ulp95.jpg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">ULP 95</h5>
-<a href="#" class="btn btn-primary">Order</a>
+ <button type="button" class="btn btn-success" data-toggle="modal" data-target="#popUpWindow95">Order</button>
+	<div class="modal fade" id="popUpWindow95">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Log In</h3>
+                </div>
+
+                <!-- body (form) -->
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" class="form-control" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- button -->
+                <div class="modal-footer">
+                    <button onClick="ULP95_login()" class="btn btn-primary btn-block">Submit</button>
+					<script> 
+					function ULP95_login(){
+						include "db_connection.php";
+						if(isset($_POST['email']) && isset($_POST['password'])){
+							&user = $_POST['email'];
+							&pass = $_POST['password'];
+							
+							$query = mysql_query("SELECT * FROM client WHERE C_Email='&user'");
+							if(mysql_num_rows(&query) < 1)
+								{
+									echo "Username does not exists.";
+								}
+							else 
+								{
+									if()
+									&product = '2';
+								}
+						}
+						
+						
+						}
+						</script>
+                </div>
+
+            </div>
+        </div>
+    </div>
             </div>
           </div>
         </div>
