@@ -1,6 +1,6 @@
-<!DOCTYPE php>
-<?php
-?>
+<!DOCTYPE html>
+
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -93,42 +93,23 @@
 
                 <!-- body (form) -->
                 <div class="modal-body">
-                    <form role="form">
+                    
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Email">
+                            <input class="form-control" type="email" id="email" name="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="password" name="password" class="form-control" placeholder="Password">
+                            <input class="form-control" type="password" id="password" name="password" placeholder="Password">
                         </div>
-                    </form>
+					 <button class="form-group" type="submit" onclick="function ULP95_login" name="login">Sign in</button>
+					<script function ULP95_login(){
+						$product = "95";
+						$rdirect = "ULP95.html";
+						
+					}></script>
                 </div>
 
-                <!-- button -->
-                <div class="modal-footer">
-                    <button onClick="ULP95_login()" class="btn btn-primary btn-block">Submit</button>
-					<script> 
-					function ULP95_login(){
-						include "db_connection.php";
-						if(isset($_POST['email']) && isset($_POST['password'])){
-							&user = $_POST['email'];
-							&pass = $_POST['password'];
-							
-							$query = mysql_query("SELECT * FROM client WHERE C_Email='&user'");
-							if(mysql_num_rows(&query) < 1)
-								{
-									echo "Username does not exists.";
-								}
-							else 
-								{
-									if()
-									&product = '2';
-								}
-						}
-						
-						
-						}
-						</script>
-                </div>
+ 
+					
 
             </div>
         </div>
@@ -208,3 +189,20 @@
     <script src="js/bootstrap-4.0.0.js"></script>
   </body>
 </html>
+
+<?php
+
+include "db_connection.php";
+IF(ISSET($_POST['login'])){
+$email = $_POST['email'];
+	echo($email);
+$password = $_POST['password'];
+$cek = mysql_num_rows(mysql_query("SELECT * FROM client WHERE C_Email='$email' AND C_Password='$password'"));
+IF($cek > 0)
+{
+ echo "<script language=\"javascript\">alert(\"welcome \");document.location.href='$rdirect';</script>";
+}else{
+echo "<script language=\"javascript\">alert(\"Invalid username or password\");document.location.href='index.php';</script>";
+}
+}
+?>
