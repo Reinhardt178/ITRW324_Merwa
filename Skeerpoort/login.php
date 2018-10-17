@@ -13,7 +13,7 @@ else
 // Define $username and $password
 $username = $_POST['email'];
 $password = $_POST['password'];
-
+$_SESSION['Cemail'] = $username;
 // mysqli_connect() function opens a new connection to the MySQL server.
 $host = "localhost";
 $usernameSQl = "root";

@@ -129,10 +129,20 @@ header("location: index.php"); // Redirecting To Home Page
             </div>
           </div>
         </div>
+        <div class="col-md-4">&nbsp;</div>
       </div>
     </div>
     <hr>
 <hr>
+<div class="container">
+  <div class="row text-right mt-4">
+	<div class="col-md-4 pb-1 pb-md-0"> </div>
+	<div class="col-md-4">&nbsp;</div>
+	 
+	  <i><?php echo $login_session; ?></i></b>
+	  <a href="logout.php" class="btn btn-danger">LOG OUT</a>
+	</div>
+</div>
 <hr>
     <div class="container text-white bg-dark p-4">
       <div class="row">
@@ -160,8 +170,7 @@ header("location: index.php"); // Redirecting To Home Page
         <div class="row">
           <div class="col-12">
             <p>Copyright © Skeerpoort Verspreiders. All rights reserved.</p>
-			   <i><?php echo $login_session; ?></i></b>
-  <b id="logout"><a href="logout.php">Log Out</a></b>
+			   
           </div>
         </div>
       </div>

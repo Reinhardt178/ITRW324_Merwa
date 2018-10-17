@@ -51,6 +51,11 @@
 			  <form action="/Write_to_Order_Detail.php">
   <div class="card-body">
               <h5 class="card-title">Please enter amount to order</h5>
+	  
+		   <label for="number">Product:</label>
+				<select class = "card-title" id = "pnumber" name = "pnumber">
+					<option>1</option>
+				</select>
 				<label for="number">Liters:</label>
 				<select class = "card-title" id = "bignumber" name = "bignumber">
 					<option>1000</option>
@@ -64,7 +69,9 @@
 					<option>9000</option>
 					<option>10000</option>
 				</select>
-	 <input type="submit" value="Confirm Order">
+	  
+	  
+	 <input type="submit" href="/Write_to_Order_Detail.php" value="Confirm Order">
 	  </div>
 				
 				  

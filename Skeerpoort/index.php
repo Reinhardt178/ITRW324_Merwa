@@ -13,7 +13,7 @@ header("location: home.php"); // Redirecting To Profile Page
 </head>
 <body>
  <div id="login">
-  <h2>Login Form</h2>
+  <h2>Skeerpoort Verspreiders</h2>
   <form action="" method="post">
    <label>Email :</label>
    <input id="name" name="email" placeholder="email" type="text">
