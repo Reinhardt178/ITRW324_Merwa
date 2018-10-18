@@ -1,19 +1,42 @@
 <?php
 session_start();
+function getPosts(myslqi $con)  {
 $Cemail = $_SESSION['login_user'];
-$host = "localhost";
-$username = "root";
-$user_pass = "usbw";
-$database = "test";
 $con=mysqli_connect("localhost","root","usbw","test");
+if (mysqli_connect_errno()) {
+    throw new Exception(mysqli_connect_error(), mysqli_connect_errno());
+}
+//$mysqli = new mysqli("localhost", "root", "usbw", "test");
+	$resulted = mysqli_query($con, "SELECT ID_Cleint WHERE C_Email = $Cemail FROM client");
+    if(mysqli_num_rows($resulted) > 0) {
+     $row = mysqli_fetch_assoc($resulted);
+      $CleintId = $row['ID_Cleint'];
+		echo $CleintId;
+    }
 
-$result = mysqli_query($con,"SELECT ID_Cleint WHERE C_Email = $Cemail FROM client") or die(mysqli_error($con));
-$CleintId = mysqli_fetch_assoc($result);
+
+    // Free result set
+    mysqli_free_result($resulted);
+	$mysqli->close();
+}
+getPosts();
+/*    mysqli_close($con);
+if ($result = $mysqli->query("SELECT ID_Cleint WHERE C_Email = $Cemail FROM client")) {
+    $CleintId = $result->num_rows;
+	echo $CleintId;
+    /* free result set */
+   /* $result->close();
+}else{ 
+		echo "error";
+		echo $Cemail;
+}*/
+//$result = mysqli_query($con,"SELECT ID_Cleint WHERE C_Email = $Cemail FROM client") or die(mysqli_error($con));
+//$CleintId = mysqli_fetch_assoc($result);
 
 
 //$CleintId = mysql_query("SELECT ID_Cleint WHERE C_Email = $Cemail FROM client");
 //$result = mysql_fetch_array($price);
-include"db_connection.php";
+/*include"db_connection.php";
 //echo $_GET["bignumber"];
 $productNr = $_GET["pnumber"];
 $new_Qty_Liters = $_GET["bignumber"];
@@ -22,7 +45,6 @@ if ($mysqli->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $mysqli->error;
-}
-$mysqli->close();
+}*/
 
 ?>

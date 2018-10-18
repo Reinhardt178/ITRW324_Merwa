@@ -28,7 +28,7 @@ header("location: index.php"); // Redirecting To Home Page
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a href="index.php">Home  </a>
+              <a href="home.php">Home  </a>
             </li>
             <li class="nav-item">
 				<li> -   </li>
