@@ -1,5 +1,22 @@
 <resources>
-    <string name="app_name">Skeerpoort Verspeiders</string>
-    <string name="title_activity_thrid">ThridActivity</string>
-    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="app_name">324Groep22</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="tab_text_1">Liter</string>
+    <string name="tab_text_2">Hello</string>
+    <string name="tab_text_3">World</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="Driver_Safety_Kit">Driver Safety Kit</string>
+    <string name="Safety_Cones">Safety Cones</string>
+    <string name="Spill_Kit_Provided">Spill Kit Provided</string>
+    <string name="Provision_for_Storage_of_Spill_Kit">Provision for Storage of Spill Kit</string>
+    <string name="Intake_and_Discharge_Valves_in_Good_Condition">Intake and Discharge Valves in Good Condition</string>
+    <string name="Hoses_in_Good_Condition">Hoses in Good Condition</string>
+    <string name="Tyres_in_Good_Condition">Tyres in Good Condition</string>
+    <string name="Condition_of_ALL_lighs_are_in_working_order">Condition of ALL lighs are in working order</string>
+    <string name="Water_test_clean">Water test clean</string>
+    <string name="All_licences_are_still_vaild">All licences are still vaild</string>
+
 </resources>

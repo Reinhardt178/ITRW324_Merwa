@@ -1,4 +1,4 @@
-package sample.com.merwa;
+package sample.com.a324groep22;
 
 import org.junit.Test;
 

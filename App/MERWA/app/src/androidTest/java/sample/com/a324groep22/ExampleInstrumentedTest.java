@@ -1,4 +1,4 @@
-package sample.com.merwa;
+package sample.com.a324groep22;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("sample.com.merwa", appContext.getPackageName());
+        assertEquals("sample.com.a324groep22", appContext.getPackageName());
     }
 }

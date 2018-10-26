@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".MenuActivity">
+
+
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:background="@drawable/capsule2"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:text="Welcome" />
+
+    <TextView
+        android:id="@+id/multiAutoCompleteTextView"
+        android:background="@drawable/capsule2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text=" Before your drive to the next client:  Please ensure that you have compled the checklist" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/cboxDSK"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="@string/Driver_Safety_Kit"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:onClick="selectItem"/>
+
+    <CheckBox
+        android:id="@+id/cboxSafetyCones"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:text="@string/Safety_Cones"
+        android:onClick="selectItem"/>
+    <CheckBox
+        android:id="@+id/cboxSpillKitProvided"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:text="@string/Spill_Kit_Provided"
+        android:onClick="selectItem"/>
+    <CheckBox
+        android:id="@+id/cboxProvisionSK"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:text="@string/Provision_for_Storage_of_Spill_Kit"
+        android:onClick="selectItem"/>
+    <CheckBox
+        android:id="@+id/cboxConditionIDValeves"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:onClick="selectItem"
+        android:text="@string/Intake_and_Discharge_Valves_in_Good_Condition" />
+    <CheckBox
+        android:id="@+id/cboxConditionHose"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:onClick="selectItem"
+        android:text="@string/Hoses_in_Good_Condition" />
+    <CheckBox
+        android:id="@+id/cboxConditionTyers"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:onClick="selectItem"
+        android:text="@string/Tyres_in_Good_Condition"/>
+
+    <CheckBox
+    android:id="@+id/cboxConditionLights"
+    android:layout_width="match_parent"
+        android:layout_height="43dp"
+    android:textColor="@color/colorAccent"
+    android:textSize="18dp"
+        android:onClick="selectItem"
+    android:text="@string/Condition_of_ALL_lighs_are_in_working_order" />
+    <CheckBox
+        android:id="@+id/cboxFuelWater"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:onClick="selectItem"
+        android:text="@string/Water_test_clean" />
+
+    <CheckBox
+    android:id="@+id/cboxLicence"
+    android:layout_width="match_parent"
+        android:layout_height="43dp"
+    android:textColor="@color/colorAccent"
+    android:textSize="18dp"
+        android:onClick="selectItem"
+    android:text="@string/All_licences_are_still_vaild" />
+
+            <RadioButton
+                android:id="@+id/rbtnDisclaimer"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="25dp"
+                android:checked="false"
+                android:text="By clicking enter-you take full responsiblity if something from the checklist is incorrect"
+                />
+            <Button
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:text="ENTER"
+                android:id="@+id/btnEnter"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
