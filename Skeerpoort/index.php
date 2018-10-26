@@ -12,6 +12,7 @@ header("location: home.php"); // Redirecting To Profile Page
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<body background="sv_login.jpg">
  <div id="login">
   <h2>Skeerpoort Verspreiders</h2>
   <form action="" method="post">

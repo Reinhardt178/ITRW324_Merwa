@@ -150,7 +150,7 @@ header("location: index.php"); // Redirecting To Home Page
           <div class="row text-center">
 <div class="col-sm-6 col-md-4 col-lg-4 col-12">
           <ul class="list-unstyled">
-                <li class="btn-link"> <a>http://www.sv1.co.za</a> </li>
+                <li class="btn-link" href= "http://www.sv1.co.za">  <a>http://www.sv1.co.za</a> </li>
           </ul>
             </div>
 </div>
@@ -160,7 +160,7 @@ header("location: index.php"); // Redirecting To Home Page
             <strong>Skeerpoort Verspreiders</strong><br>
             <br>
             Potchefstroom, RSA, <br>
-            <abbr title="Phone">P:</abbr> (083) 261 9735
+            <abbr title="Phone">Phone:</abbr> (083) 261 9735
           </address>
 </div>
       </div>

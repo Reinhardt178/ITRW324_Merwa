@@ -2,7 +2,7 @@
 
 
 // mysqli_connect() function opens a new connection to the MySQL server.
-$conn = mysqli_connect("localhost", "root", "usbw", "test");
+$conn = mysqli_connect("localhost", "merwavok_admin", "123QWEasdzxc", "merwavok_Merwa");
 
 session_start();// Starting Session
 

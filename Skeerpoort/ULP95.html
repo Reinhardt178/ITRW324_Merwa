@@ -41,26 +41,42 @@
     <hr>
     <div class="container">
       <div class="row text-center"> <span class="card-body">
-      <label for="number2">Liters Ordered:</label>
-<div>Liters georder</div>
+      
 		  
         </span>
         <div class="col-md-4 pb-1 pb-md-0">
           <div class="card">
             <img class="card-img-top" src="images/ulp95.jpg" alt="Card image cap">
+			  <strong></strong>
+			   <form action="/Write_to_Order_Detail.php">
             <div class="card-body">
               <h5 class="card-title">Please enter amount to order</h5>
-<label for="number">Liters:</label>
-              <input type="number" name="number" id="number">
-              <a href="#" class="btn btn-primary">Confirm Order</a>
+	  
+		   <label for="number">Product:</label>
+				<select class = "card-title" id = "pnumber" name = "pnumber">
+					<option>2</option>
+				</select>
+				<label for="number">Liters:</label>
+				<select class = "card-title" id = "bignumber" name = "bignumber">
+					<option>1000</option>
+					<option>2000</option>
+					<option>3000</option>
+					<option>4000</option>
+					<option>5000</option>
+					<option>6000</option>
+					<option>7000</option>
+					<option>8000</option>
+					<option>9000</option>
+					<option>10000</option>
+				</select>
+	  
+	  
+	 <input type="submit" href="/Write_to_Order_Detail.php" value="Confirm Order">
             </div>
           </div>
         </div>
         <div class="col-md-4 pb-1 pb-md-0">
-			 <h5 class="card-title">Unorder</h5>
-			<label for="number">Liters:</label>
-              <input type="number" name="number" id="number">
-              <a href="#" class="btn btn-primary">Confirm Correction</a> </div>
+			 
       </div>
 </div>
     <hr>

@@ -1,9 +1,9 @@
 <?php
-
+//"merwavok_admin","123QWEasdzxc","merwavok_Merwa"
 $host = "localhost";
-$username = "root";
-$user_pass = "usbw";
-$database = "test";
+$username = "merwavok_admin";
+$user_pass = "123QWEasdzxc";
+$database = "merwavok_Merwa";
 
 $mysqli = new mysqli($host, $username, $user_pass, $database);
 
